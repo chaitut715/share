@@ -1,0 +1,199 @@
+21-Jul-2019 11:11:39.729 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.SakaiCacheManagerFactoryBean.afterPropertiesSet Attempting to load cluster caching using Terracotta at: localhost:9510.
+2019-07-21 11:11:40,205 INFO - Terracotta 3.7.10, as of 20150306-085306 (Revision 42990-26157 by jenkins-slave@tc-c65-jenkins-slave-001.eur.ad.sag from 3.7.10)
+2019-07-21 11:11:40,587 INFO - Successfully loaded base configuration from server at 'tc-server:9510'.
+2019-07-21 11:11:40,644 INFO - Successfully loaded base configuration from file at '/tomcat/temp/tc-config6951927683751082635.xml'.
+2019-07-21 11:11:40,664 INFO - Log file: '/root/terracotta-1/client-logs/terracotta-client.log'.
+2019-07-21 11:11:42,109 INFO - Connection successfully established to server at 172.18.0.5:9510
+21-Jul-2019 11:11:44.327 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.BaseMemoryService.init INIT
+21-Jul-2019 11:11:44.336 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.init INIT: STATUS_ALIVE, caches: [org.hibernate.cache.spi.UpdateTimestampsCache, org.sakaiproject.event.impl.ClusterEventTracking.eventsCache, org.sakaiproject.event.impl.ClusterEventTracking.eventLastCache, org.hibernate.cache.internal.StandardQueryCache]
+21-Jul-2019 11:11:44.337 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhCacheJmxRegistration.register Registering Cache Provider with JMXBeanServer com.sun.jmx.mbeanserver.JmxMBeanServer@33c7353a
+21-Jul-2019 11:11:44.346 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.BaseMemoryService.init INIT complete: new: EhcacheMemoryService
+21-Jul-2019 11:11:44.353 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.user.api.UserDirectoryService) using defaults
+21-Jul-2019 11:11:44.355 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Configuring ehcache (org.sakaiproject.user.api.UserDirectoryService) from Sakai config: maxElementsInMemory=100000,timeToLiveSeconds=86400,timeToIdleSeconds=86400
+21-Jul-2019 11:11:44.366 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.user.api.UserDirectoryService.callCache) using defaults
+21-Jul-2019 11:11:44.367 INFO [localhost-startStop-1] org.sakaiproject.user.impl.BaseUserDirectoryService.init Creating user callCache observer for event based cache expiration (for local caches)
+21-Jul-2019 11:11:44.420 INFO [localhost-startStop-1] org.sakaiproject.event.impl.BaseEventTrackingService.init org.sakaiproject.event.impl.ClusterEventTracking$$EnhancerBySpringCGLIB$$6178efa6@5de08152.init()
+21-Jul-2019 11:11:44.444 INFO [localhost-startStop-1] org.sakaiproject.event.impl.ClusterEventTracking.init period: 5, batch: true, checkDb: true
+21-Jul-2019 11:11:44.445 INFO [localhost-startStop-1] org.sakaiproject.event.impl.ClusterEventTracking.init Server Start: serverId=server2, serverInstance=1563721899516, serverIdInstance=server2-1563721899516, version=19.0/Sakai
+21-Jul-2019 11:11:44.460 INFO [localhost-startStop-1] org.sakaiproject.authz.impl.FunctionManagerComponent.init init()
+21-Jul-2019 11:11:44.462 INFO [localhost-startStop-1] org.sakaiproject.user.impl.PasswordPolicyProviderDefaultImpl.init PasswordPolicyProviderDefaultImpl.init(): minEntropy=16, mediumEntropy=32, highEntropy=48, maxSequenceLength=3
+21-Jul-2019 11:11:44.463 INFO [localhost-startStop-1] org.sakaiproject.user.impl.BaseUserDirectoryService.init init(): PasswordPolicyProvider (org.sakaiproject.user.api.PasswordPolicyProvider): none
+21-Jul-2019 11:11:44.463 INFO [localhost-startStop-1] org.sakaiproject.user.impl.BaseUserDirectoryService.init init(): provider: none separateIdEid: true
+21-Jul-2019 11:11:44.463 INFO [localhost-startStop-1] org.sakaiproject.user.impl.DbUserService.init init(): table: SAKAI_USER external locks: true
+21-Jul-2019 11:11:44.463 INFO [localhost-startStop-1] org.sakaiproject.user.impl.DbUserService.init User ID/EID mapping Cache [org.sakaiproject.user.api.UserDirectoryService]
+21-Jul-2019 11:11:44.464 INFO [localhost-startStop-1] org.sakaiproject.user.impl.PrecachingDbUserService.init User precache not scheduled for startup run
+21-Jul-2019 11:11:44.464 INFO [localhost-startStop-1] org.sakaiproject.user.impl.PrecachingDbUserService.init User precache not scheduled for daily run
+21-Jul-2019 11:11:44.465 INFO [localhost-startStop-1] org.sakaiproject.entity.impl.EntityManagerComponent.init init()
+21-Jul-2019 11:11:44.467 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.user.impl.BasePreferencesService.preferences) using defaults
+21-Jul-2019 11:11:44.467 INFO [localhost-startStop-1] org.sakaiproject.user.impl.BasePreferencesService.init init()
+21-Jul-2019 11:11:44.468 INFO [localhost-startStop-1] org.sakaiproject.user.impl.DbPreferencesService.init init(): table: SAKAI_PREFERENCES locks-in-db: false
+21-Jul-2019 11:11:44.526 INFO [localhost-startStop-1] org.sakaiproject.entitybroker.impl.entityprovider.EntityProviderManagerImpl.init EntityProviderManagerImpl init
+21-Jul-2019 11:11:44.552 INFO [localhost-startStop-1] org.sakaiproject.entitybroker.impl.entityprovider.EntityProviderManagerImpl.registerEntityProvider Registered entity provider (org.sakaiproject.entitybroker.impl.entityprovider.EntityProviderManagerImpl$1) prefix (describe) with 1 capabilities
+21-Jul-2019 11:11:44.652 INFO [localhost-startStop-1] org.sakaiproject.event.impl.BaseLearningResourceStoreService.init LRS did not search for existing LearningResourceStoreProviders in the system (ac=org.sakaiproject.util.SakaiApplicationContext@10825645: startup date [Sun Jul 21 11:11:17 EDT 2019]; root of context hierarchy, enabled=false)
+21-Jul-2019 11:11:44.653 INFO [localhost-startStop-1] org.sakaiproject.event.impl.BaseLearningResourceStoreService.init LRS INIT: enabled=false
+21-Jul-2019 11:11:44.663 INFO [localhost-startStop-1] org.sakaiproject.email.impl.BasicEmailService.init init(): smtp: null bounces to: postmaster@localhost maxRecipients: 100 testMode: false
+21-Jul-2019 11:11:44.708 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.authz.api.SecurityService.cache) using defaults
+21-Jul-2019 11:11:44.712 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.authz.api.SecurityService.superCache) using defaults
+21-Jul-2019 11:11:44.715 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.authz.api.SecurityService.contentCache) using defaults
+21-Jul-2019 11:11:44.759 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.event.api.UsageSessionService.recentUserRefresh) using defaults
+21-Jul-2019 11:11:44.760 INFO [localhost-startStop-1] org.sakaiproject.event.impl.UsageSessionServiceAdaptor.init init()
+21-Jul-2019 11:11:44.869 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.site.impl.SiteCacheImpl.cache) using defaults
+21-Jul-2019 11:11:44.872 INFO [localhost-startStop-1] org.sakaiproject.site.impl.SiteCacheSafe.<init> Creating SiteCacheImpl.cache observer for event based cache expiration (for local caches)
+21-Jul-2019 11:11:44.881 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.site.impl.SiteCacheImpl.cacheTools) using defaults
+21-Jul-2019 11:11:44.882 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Configured ehcache (org.sakaiproject.site.impl.SiteCacheImpl.cacheTools) from inputs: org.sakaiproject.memory.impl.EhcacheCache$1@76e7855
+21-Jul-2019 11:11:44.894 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.site.impl.SiteCacheImpl.cachePages) using defaults
+21-Jul-2019 11:11:44.894 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Configured ehcache (org.sakaiproject.site.impl.SiteCacheImpl.cachePages) from inputs: org.sakaiproject.memory.impl.EhcacheCache$1@76e7855
+21-Jul-2019 11:11:44.896 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.site.impl.SiteCacheImpl.cacheGroups) using defaults
+21-Jul-2019 11:11:44.896 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Configured ehcache (org.sakaiproject.site.impl.SiteCacheImpl.cacheGroups) from inputs: org.sakaiproject.memory.impl.EhcacheCache$1@76e7855
+21-Jul-2019 11:11:44.903 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.site.api.SiteService.userSiteCache) using defaults
+21-Jul-2019 11:11:44.966 INFO [localhost-startStop-1] org.sakaiproject.coursemanagement.impl.CourseManagementServiceHibernateImpl.init Initializing org.sakaiproject.coursemanagement.impl.CourseManagementServiceHibernateImpl
+21-Jul-2019 11:11:44.985 INFO [localhost-startStop-1] org.sakaiproject.site.impl.DbSiteService.init init(): site table: SAKAI_SITE external locks: true
+21-Jul-2019 11:11:45.087 INFO [localhost-startStop-1] org.sakaiproject.coursemanagement.impl.provider.CourseManagementGroupProvider.init initializing org.sakaiproject.coursemanagement.impl.provider.CourseManagementGroupProvider
+21-Jul-2019 11:11:45.098 INFO [localhost-startStop-1] org.sakaiproject.authz.impl.BaseAuthzGroupService.init init(): provider: com.sun.proxy.$Proxy95
+21-Jul-2019 11:11:45.112 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.authz.impl.DbAuthzGroupService.realmRoleGroupCache) using defaults
+21-Jul-2019 11:11:45.113 INFO [localhost-startStop-1] org.sakaiproject.authz.impl.DbAuthzGroupService.init init(): table: SAKAI_REALM external locks: true
+21-Jul-2019 11:11:45.121 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.authz.impl.DbAuthzGroupService.authzUserGroupIdsCache) using defaults
+21-Jul-2019 11:11:45.126 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Configuring ehcache (org.sakaiproject.authz.impl.DbAuthzGroupService.authzUserGroupIdsCache) from Sakai config: maxElementsInMemory=2000,timeToLiveSeconds=21600,timeToIdleSeconds=21600
+21-Jul-2019 11:11:45.133 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.authz.impl.DbAuthzGroupService.maintainRolesCache) using defaults
+INFO: [GenericDao] Could not execute first DDL line, skipping the rest: StatementCallback; bad SQL grammar [CREATE TABLE ENTITY_PROPERTIES ( id            bigint(20) AUTO_INCREMENT NOT NULL PRIMARY KEY, entityRef       varchar(255) NOT NULL, entityPrefix    varchar(255) NOT NULL, propertyName    varchar(255) NOT NULL, propertyValue   text NOT NULL, INDEX (entityRef, entityPrefix, propertyName) )]; nested exception is java.sql.SQLSyntaxErrorException: (conn=265) Table 'ENTITY_PROPERTIES' already exists:java.sql.SQLSyntaxErrorException: (conn=265) Table 'ENTITY_PROPERTIES' already exists
+INFO: [GenericDao] Could not execute first DDL line, skipping the rest: StatementCallback; bad SQL grammar [CREATE TABLE ENTITY_TAG_APPLICATIONS ( id            bigint(20) AUTO_INCREMENT NOT NULL PRIMARY KEY, entityRef       varchar(255) NOT NULL, entityPrefix    varchar(255) NOT NULL, tag             varchar(255) NOT NULL, INDEX (entityRef, entityPrefix, tag) )]; nested exception is java.sql.SQLSyntaxErrorException: (conn=265) Table 'ENTITY_TAG_APPLICATIONS' already exists:java.sql.SQLSyntaxErrorException: (conn=265) Table 'ENTITY_TAG_APPLICATIONS' already exists
+21-Jul-2019 11:11:45.518 INFO [localhost-startStop-1] org.sakaiproject.tool.impl.ToolComponent.init init(): hidden tools: sakai.gradebook.tool
+21-Jul-2019 11:11:45.521 INFO [localhost-startStop-1] org.sakaiproject.accountvalidator.logic.impl.ValidationLogicImpl.init init()
+21-Jul-2019 11:11:45.955 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.time.impl.BasicTimeService.userLocaleCache) using defaults
+21-Jul-2019 11:11:45.959 INFO [localhost-startStop-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.time.impl.BasicTimeService.userTimezoneCache) using defaults
+21-Jul-2019 11:11:45.960 INFO [localhost-startStop-1] org.sakaiproject.time.impl.BasicTimeService.init init()
+21-Jul-2019 11:11:46.121 INFO [localhost-startStop-1] org.sakaiproject.alias.impl.DbAliasService.init init(): table: SAKAI_ALIAS external locks: true checkOld: false
+21-Jul-2019 11:11:46.141 INFO [localhost-startStop-1] org.sakaiproject.event.impl.BaseNotificationService.init org.sakaiproject.event.impl.DbNotificationService$$EnhancerBySpringCGLIB$$8a1da21f@76f032f0.init() started
+21-Jul-2019 11:11:46.142 INFO [localhost-startStop-1] org.sakaiproject.event.impl.BaseNotificationService.init org.sakaiproject.event.impl.DbNotificationService$$EnhancerBySpringCGLIB$$8a1da21f@76f032f0.init() complete
+21-Jul-2019 11:11:46.143 INFO [localhost-startStop-1] org.sakaiproject.event.impl.DbNotificationService.init .init(): table: SAKAI_NOTIFICATION locks-in-db: false
+21-Jul-2019 11:11:46.164 INFO [localhost-startStop-1] org.sakaiproject.content.impl.DbResourceTypeRegistry.init init()
+21-Jul-2019 11:11:46.167 INFO [localhost-startStop-1] org.sakaiproject.content.impl.ResourceTypeRegistryImpl.init init()
+21-Jul-2019 11:11:46.174 INFO [localhost-startStop-1] org.sakaiproject.antivirus.impl.ClamAVScanner.init init()
+21-Jul-2019 11:11:46.192 INFO [localhost-startStop-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.init INIT: session clustering=true
+
+
+
+
+
+21-Jul-2019 11:13:06.426 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 113203 ms
+21-Jul-2019 11:14:41.853 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [34fe06f7-816d-4b88-9358-b6154fa844c3] complete, rebuilt: false
+21-Jul-2019 11:14:42.131 INFO [http-nio-8080-exec-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.db.BaseDbFlatStorage.SAKAI_SITE_PROPERTY) using defaults
+21-Jul-2019 11:14:42.271 INFO [http-nio-8080-exec-1] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.db.BaseDbFlatStorage.SAKAI_REALM_PROPERTY) using defaults
+21-Jul-2019 11:14:42.485 INFO [http-nio-8080-exec-1] org.sakaiproject.portal.render.portlet.services.SakaiOptionalPortletContainerServices.getPortletPreferencesService Sakai Optional Portal Services returning org.sakaiproject.portal.render.portlet.services.SakaiOptionalPortletContainerServices$SakaiPortletPreferencesService@58fbfa9b
+21-Jul-2019 11:14:42.488 INFO [http-nio-8080-exec-1] org.apache.pluto.PortletContainerFactory.createContainer Portlet Container [sakai] created.
+21-Jul-2019 11:14:42.489 INFO [http-nio-8080-exec-1] org.apache.pluto.core.PortletContainerImpl.infoWithName Portlet Container [sakai]: Container initialized successfully.
+21-Jul-2019 11:14:42.892 INFO [http-nio-8080-exec-9] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [e1fe6944-1cbe-45c0-a0a0-3eaecf51b874] complete, rebuilt: false
+21-Jul-2019 11:14:43.466 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [636d6655-e7cc-4341-9ec3-d12ef37ad333] complete, rebuilt: false
+21-Jul-2019 11:14:43.472 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [636d6655-e7cc-4341-9ec3-d12ef37ad333] complete, rebuilt: false
+21-Jul-2019 11:14:43.474 INFO [http-nio-8080-exec-6] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [636d6655-e7cc-4341-9ec3-d12ef37ad333] complete, rebuilt: false
+21-Jul-2019 11:14:43.491 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [636d6655-e7cc-4341-9ec3-d12ef37ad333] complete, rebuilt: false
+21-Jul-2019 11:14:43.646 INFO [http-nio-8080-exec-5] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [f1f1e047-da1f-49ba-a9aa-9098ccc6d242] complete, rebuilt: false
+21-Jul-2019 11:14:45.032 INFO [pool-3-thread-1] org.sakaiproject.authz.impl.DbAuthzGroupService.run RefreshAuthzGroupTask.run() refreshed 1 realms in 0.005 seconds, longest realm was /site/!gateway at 0.005 seconds
+21-Jul-2019 11:14:46.630 INFO [http-nio-8080-exec-9] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.db.BaseDbFlatStorage.SAKAI_USER_PROPERTY) using defaults
+21-Jul-2019 11:14:46.662 INFO [http-nio-8080-exec-9] org.sakaiproject.login.tool.SkinnableLogin.complete complete: nowhere set to go, going to portal
+21-Jul-2019 11:14:46.767 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [16c9be89-2c26-4075-a51b-44960693d0be] complete, rebuilt: false
+21-Jul-2019 11:14:46.767 WARN [http-nio-8080-exec-10] org.sakaiproject.tool.impl.SessionComponent.startSession startSession: duplication id: 16c9be89-2c26-4075-a51b-44960693d0be
+21-Jul-2019 11:14:46.773 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [16c9be89-2c26-4075-a51b-44960693d0be] complete, rebuilt: false
+21-Jul-2019 11:14:46.930 WARN [http-nio-8080-exec-7] org.sakaiproject.tool.impl.SessionComponent.startSession startSession: duplication id: f8f935cd-f5d3-4415-bddb-a6f0ca5ff64d
+21-Jul-2019 11:14:46.931 INFO [http-nio-8080-exec-7] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [f8f935cd-f5d3-4415-bddb-a6f0ca5ff64d] complete, rebuilt: false
+21-Jul-2019 11:14:46.932 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [f8f935cd-f5d3-4415-bddb-a6f0ca5ff64d] complete, rebuilt: false
+21-Jul-2019 11:14:46.930 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [f8f935cd-f5d3-4415-bddb-a6f0ca5ff64d] complete, rebuilt: false
+21-Jul-2019 11:14:47.108 INFO [http-nio-8080-exec-9] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [cb40fe01-8b5f-4dbf-8e79-1f07733e241e] complete, rebuilt: false
+21-Jul-2019 11:14:47.113 INFO [http-nio-8080-exec-5] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [cb40fe01-8b5f-4dbf-8e79-1f07733e241e] complete, rebuilt: false
+21-Jul-2019 11:14:47.293 WARN [http-nio-8080-exec-7] org.sakaiproject.tool.impl.SessionComponent.startSession startSession: duplication id: 1406fe37-e735-4c73-a341-b02a010fba44
+21-Jul-2019 11:14:47.294 INFO [http-nio-8080-exec-7] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [1406fe37-e735-4c73-a341-b02a010fba44] complete, rebuilt: false
+21-Jul-2019 11:14:47.293 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [1406fe37-e735-4c73-a341-b02a010fba44] complete, rebuilt: false
+21-Jul-2019 11:14:47.510 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [fd27c77d-694a-4c2e-bb10-9c6f482bb410] complete, rebuilt: false
+21-Jul-2019 11:14:47.519 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [fd27c77d-694a-4c2e-bb10-9c6f482bb410] complete, rebuilt: false
+21-Jul-2019 11:14:47.691 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [8a45e15b-2943-40ca-9d7e-9f73d479dd75] complete, rebuilt: false
+21-Jul-2019 11:14:47.694 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [8a45e15b-2943-40ca-9d7e-9f73d479dd75] complete, rebuilt: false
+21-Jul-2019 11:14:47.706 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [8a45e15b-2943-40ca-9d7e-9f73d479dd75] complete, rebuilt: false
+21-Jul-2019 11:14:51.929 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [54176c51-738a-447d-b831-79ec911035a1] complete, rebuilt: false
+21-Jul-2019 11:14:52.024 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [54176c51-738a-447d-b831-79ec911035a1] complete, rebuilt: false
+21-Jul-2019 11:14:52.050 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [53c6a309-57fb-4623-91ff-ecc8cd289ebf] complete, rebuilt: false
+21-Jul-2019 11:14:52.054 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [53c6a309-57fb-4623-91ff-ecc8cd289ebf] complete, rebuilt: false
+21-Jul-2019 11:14:52.169 INFO [http-nio-8080-exec-9] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c60e43e8-b70c-4acf-a22f-84ed7efc2a30] complete, rebuilt: false
+21-Jul-2019 11:14:52.170 INFO [http-nio-8080-exec-5] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c60e43e8-b70c-4acf-a22f-84ed7efc2a30] complete, rebuilt: false
+21-Jul-2019 11:14:52.178 INFO [http-nio-8080-exec-6] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c60e43e8-b70c-4acf-a22f-84ed7efc2a30] complete, rebuilt: false
+21-Jul-2019 11:14:52.182 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c60e43e8-b70c-4acf-a22f-84ed7efc2a30] complete, rebuilt: false
+21-Jul-2019 11:14:52.256 INFO [http-nio-8080-exec-9] org.sakaiproject.entitybroker.util.servlet.DirectServlet.dispatch Could not process entity: /portal (403)[null]: Security exception handling request for view (/portal.json), this is typically caused by the current user not having access to the data requested or the user not being logged in at all :: message=You must be logged in to use this service (rethrown)
+21-Jul-2019 11:14:52.376 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [33c42c5f-a7a8-4a7d-a056-d274f3eecb49] complete, rebuilt: false
+21-Jul-2019 11:14:52.390 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [33c42c5f-a7a8-4a7d-a056-d274f3eecb49] complete, rebuilt: false
+21-Jul-2019 11:14:52.549 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [a208127a-1ea1-44e0-8110-299ff45c0e1a] complete, rebuilt: false
+21-Jul-2019 11:14:52.590 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c44a4b48-b93c-4ab0-913d-0bd56c8833e4] complete, rebuilt: false
+21-Jul-2019 11:14:52.670 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [ce63f9fe-f2e6-4038-834a-b286c100c42f] complete, rebuilt: false
+21-Jul-2019 11:14:52.812 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [a04d5653-d030-4be1-94f2-9991c8790872] complete, rebuilt: false
+21-Jul-2019 11:14:52.955 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [b1025090-5db1-45c7-89b9-64a4112b6b45] complete, rebuilt: false
+21-Jul-2019 11:14:52.970 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [b1025090-5db1-45c7-89b9-64a4112b6b45] complete, rebuilt: false
+21-Jul-2019 11:16:08.694 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [acca1488-2b3b-48c9-a86e-634531fd70f2] complete, rebuilt: false
+21-Jul-2019 11:16:08.708 INFO [http-nio-8080-exec-2] org.sakaiproject.login.tool.SkinnableLogin.complete complete: nowhere set to go, going to portal
+21-Jul-2019 11:16:09.065 INFO [http-nio-8080-exec-6] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [455ad05b-7db5-46c4-86ec-88bce842b3aa] complete, rebuilt: false
+21-Jul-2019 11:16:09.072 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [455ad05b-7db5-46c4-86ec-88bce842b3aa] complete, rebuilt: false
+21-Jul-2019 11:16:09.080 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [455ad05b-7db5-46c4-86ec-88bce842b3aa] complete, rebuilt: false
+21-Jul-2019 11:16:09.105 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [455ad05b-7db5-46c4-86ec-88bce842b3aa] complete, rebuilt: false
+21-Jul-2019 11:16:09.229 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c265b287-9302-4a0a-ab64-d841c82ecf9a] complete, rebuilt: false
+21-Jul-2019 11:16:17.980 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [ff0bd71d-2c6e-4057-9c19-04acfb4d691d] complete, rebuilt: false
+21-Jul-2019 11:16:17.988 INFO [http-nio-8080-exec-2] org.sakaiproject.login.tool.SkinnableLogin.complete complete: nowhere set to go, going to portal
+21-Jul-2019 11:16:18.144 WARN [http-nio-8080-exec-6] org.sakaiproject.tool.impl.SessionComponent.startSession startSession: duplication id: c9b7a106-c4a4-4c3c-979b-713ef8f9f62e
+21-Jul-2019 11:16:18.144 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c9b7a106-c4a4-4c3c-979b-713ef8f9f62e] complete, rebuilt: false
+21-Jul-2019 11:16:18.144 INFO [http-nio-8080-exec-6] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c9b7a106-c4a4-4c3c-979b-713ef8f9f62e] complete, rebuilt: false
+21-Jul-2019 11:16:18.151 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c9b7a106-c4a4-4c3c-979b-713ef8f9f62e] complete, rebuilt: false
+21-Jul-2019 11:16:18.503 INFO [http-nio-8080-exec-7] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [84b481ec-0e80-4d7f-a052-68df3afbdc8e] complete, rebuilt: false
+21-Jul-2019 11:16:44.952 INFO [pool-3-thread-1] org.sakaiproject.authz.impl.DbAuthzGroupService.run RefreshAuthzGroupTask.run() refreshed 1 realms in 0.003 seconds, longest realm was !site.user at 0.003 seconds
+21-Jul-2019 11:17:00.247 INFO [Timer-2] org.sakaiproject.email.impl.BaseDigestService.sendDigests Preparing to send the mail digests for 20190721040000000]20190722040000000
+
+
+
+
+21-Jul-2019 11:18:59.066 WARN [SakaiClusterService.Maintenance] org.sakaiproject.cluster.impl.SakaiClusterService.ghostCleanup run(): ghost-busting server: 98b0b175bda4-1563721386577 from : server2-1563721899516
+21-Jul-2019 11:18:59.097 INFO [SakaiClusterService.Maintenance] org.sakaiproject.cluster.impl.SakaiClusterService.ghostCleanup Closed 3 orphaned usage session records
+
+
+
+
+
+
+
+21-Jul-2019 11:26:04.762 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [e55e732c-8da6-425a-a71e-36f2679fbe9d] complete, rebuilt: false
+21-Jul-2019 11:26:05.154 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [801f1dd8-bee4-4e32-b895-18ca45c902c5] complete, rebuilt: false
+21-Jul-2019 11:26:05.161 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [801f1dd8-bee4-4e32-b895-18ca45c902c5] complete, rebuilt: false
+21-Jul-2019 11:26:08.599 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [801f1dd8-bee4-4e32-b895-18ca45c902c5] complete, rebuilt: false
+21-Jul-2019 11:26:08.629 INFO [http-nio-8080-exec-8] org.sakaiproject.memory.impl.EhcacheMemoryService.makeEhcache Created ehcache (org.sakaiproject.db.BaseDbFlatStorage.SAKAI_SITE_PAGE_PROPERTY) using defaults
+21-Jul-2019 11:26:08.855 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [091b87e5-1b4b-439c-a372-aa414f979241] complete, rebuilt: false
+21-Jul-2019 11:26:08.862 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [091b87e5-1b4b-439c-a372-aa414f979241] complete, rebuilt: false
+21-Jul-2019 11:26:08.873 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [091b87e5-1b4b-439c-a372-aa414f979241] complete, rebuilt: false
+21-Jul-2019 11:26:12.910 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [814b075c-6fd3-4444-b96d-9fb9fc288dab] complete, rebuilt: false
+21-Jul-2019 11:26:12.961 INFO [http-nio-8080-exec-1] org.sakaiproject.login.tool.SkinnableLogin.complete complete: nowhere set to go, going to portal
+21-Jul-2019 11:26:13.102 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [94f9b4da-ef31-441a-b8aa-dd8f52903c16] complete, rebuilt: false
+21-Jul-2019 11:26:13.108 INFO [http-nio-8080-exec-7] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [94f9b4da-ef31-441a-b8aa-dd8f52903c16] complete, rebuilt: false
+21-Jul-2019 11:26:13.115 INFO [http-nio-8080-exec-5] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [94f9b4da-ef31-441a-b8aa-dd8f52903c16] complete, rebuilt: false
+21-Jul-2019 11:26:13.117 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [94f9b4da-ef31-441a-b8aa-dd8f52903c16] complete, rebuilt: false
+21-Jul-2019 11:26:13.243 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [04331802-2232-41e1-bc19-99faa84a1ba3] complete, rebuilt: false
+21-Jul-2019 11:26:13.377 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [79b1383e-3a9b-4c3f-a8aa-f40ddbd0b052] complete, rebuilt: false
+21-Jul-2019 11:26:13.385 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [79b1383e-3a9b-4c3f-a8aa-f40ddbd0b052] complete, rebuilt: false
+21-Jul-2019 11:26:13.388 INFO [http-nio-8080-exec-7] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [79b1383e-3a9b-4c3f-a8aa-f40ddbd0b052] complete, rebuilt: false
+21-Jul-2019 11:26:13.479 INFO [http-nio-8080-exec-5] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [da6efdb0-c931-4ac1-b93b-bdbdac00c5fc] complete, rebuilt: false
+21-Jul-2019 11:26:13.525 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [da6efdb0-c931-4ac1-b93b-bdbdac00c5fc] complete, rebuilt: false
+21-Jul-2019 11:26:13.536 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [da6efdb0-c931-4ac1-b93b-bdbdac00c5fc] complete, rebuilt: false
+21-Jul-2019 11:26:14.841 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [1f990e4f-b8dd-4792-955d-0386ccf3f359] complete, rebuilt: false
+21-Jul-2019 11:26:14.846 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [1f990e4f-b8dd-4792-955d-0386ccf3f359] complete, rebuilt: false
+21-Jul-2019 11:26:15.097 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [0c0cf04d-c046-4067-ae11-7da58132c4db] complete, rebuilt: false
+21-Jul-2019 11:26:18.668 INFO [http-nio-8080-exec-5] org.sakaiproject.login.tool.SkinnableLogin.complete complete: nowhere set to go, going to portal
+21-Jul-2019 11:26:18.762 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [56166d7a-7eae-43b8-91e5-ca2baa20e653] complete, rebuilt: false
+21-Jul-2019 11:26:18.765 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [56166d7a-7eae-43b8-91e5-ca2baa20e653] complete, rebuilt: false
+21-Jul-2019 11:26:18.770 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [56166d7a-7eae-43b8-91e5-ca2baa20e653] complete, rebuilt: false
+21-Jul-2019 11:26:18.867 WARN [http-nio-8080-exec-1] org.sakaiproject.tool.impl.SessionComponent.startSession startSession: duplication id: 56166d7a-7eae-43b8-91e5-ca2baa20e653
+21-Jul-2019 11:26:18.868 INFO [http-nio-8080-exec-1] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [56166d7a-7eae-43b8-91e5-ca2baa20e653] complete, rebuilt: false
+21-Jul-2019 11:26:18.867 INFO [http-nio-8080-exec-8] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [56166d7a-7eae-43b8-91e5-ca2baa20e653] complete, rebuilt: false
+21-Jul-2019 11:26:18.981 INFO [http-nio-8080-exec-7] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [56166d7a-7eae-43b8-91e5-ca2baa20e653] complete, rebuilt: false
+21-Jul-2019 11:26:44.538 INFO [pool-3-thread-1] org.sakaiproject.authz.impl.DbAuthzGroupService.run RefreshAuthzGroupTask.run() refreshed 2 realms in 0.003 seconds, longest realm was /site/!gateway at 0.002 seconds
+21-Jul-2019 11:27:37.371 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [e857f1a2-5b9e-430d-a32e-63e7bd1365ec] complete, rebuilt: false
+21-Jul-2019 11:27:37.638 INFO [http-nio-8080-exec-6] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [c107eac5-98ad-4ebb-b62d-687ec16be6cc] complete, rebuilt: false
+21-Jul-2019 11:27:37.989 INFO [http-nio-8080-exec-3] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [70947d23-0c13-4821-9d48-69454712d56f] complete, rebuilt: false
+21-Jul-2019 11:27:38.296 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [e7700552-4144-4e85-b0a4-5ca16653dec9] complete, rebuilt: false
+21-Jul-2019 11:27:38.569 INFO [http-nio-8080-exec-10] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [dd390893-6fdb-4014-9631-db6d09ce3fd4] complete, rebuilt: false
+21-Jul-2019 11:27:42.451 INFO [http-nio-8080-exec-5] org.sakaiproject.login.tool.SkinnableLogin.complete complete: nowhere set to go, going to portal
+21-Jul-2019 11:27:42.574 INFO [http-nio-8080-exec-2] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [4d3a9d7b-786d-476b-99a2-e2e975089975] complete, rebuilt: false
+21-Jul-2019 11:27:42.717 INFO [http-nio-8080-exec-7] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [2df48aab-1202-4fc9-9be3-57583764db00] complete, rebuilt: false
+21-Jul-2019 11:27:42.722 INFO [http-nio-8080-exec-5] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [2df48aab-1202-4fc9-9be3-57583764db00] complete, rebuilt: false
+21-Jul-2019 11:27:42.727 INFO [http-nio-8080-exec-4] org.sakaiproject.tool.impl.RebuildBreakdownServiceImpl.rebuildSession RBS rebuildSession, sessionId: [2df48aab-1202-4fc9-9be3-57583764db00] complete, rebuilt: false
